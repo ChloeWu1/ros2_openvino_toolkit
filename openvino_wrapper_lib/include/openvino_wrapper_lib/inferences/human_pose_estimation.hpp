@@ -1,4 +1,4 @@
-// Copyright (c) 2018 Intel Corporation
+// Copyright (c) 2023 Intel Corporation
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -14,10 +14,10 @@
 
 /**
  * @brief A header file with declaration for HumanPoseEstimation Class
- * @file vehicle_attribs_detection.hpp
+ * @file human_pose_estimation.hpp
  */
-#ifndef OPENVINO_WRAPPER_LIB_INFERENCES_VEHICLE_ATTRIBS_DETECTION_HPP_
-#define OPENVINO_WRAPPER_LIB_INFERENCES_VEHICLE_ATTRIBS_DETECTION_HPP_
+#ifndef OPENVINO_WRAPPER_LIB_INFERENCES_HUMAN_POSE_ESTIMATION_HPP_
+#define OPENVINO_WRAPPER_LIB_INFERENCES_HUMAN_POSE_ESTIMATION_HPP_
 #include <rclcpp/rclcpp.hpp>
 #include <memory>
 #include <vector>
@@ -28,18 +28,12 @@
 #include "openvino_wrapper_lib/inferences/openpose_decoder.hpp"
 #include "opencv2/opencv.hpp"
 // namespace
-
-
-
 namespace openvino_wrapper_lib
 {
 /**
  * @class HumanPoseEstimationResult
  * @brief Class for storing and processing human pose estimation result.
  */
-
-
-
 class HumanPoseEstimationResult : public Result
 {
 public:
